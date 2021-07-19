@@ -1,0 +1,266 @@
+/*Variáveis*/
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+
+  --white: #ffffff;
+  --white300: #f9f9f9;
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: var(--title);
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+/*===============================================*/
+
+/*HEADER*/
+.header{
+  background-color: var(--bgSite);
+  padding: 50px 0 0 0 ;
+}
+.container{
+  width: 100vw;
+  height: auto;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.conteudo-header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 131px;
+
+}
+
+
+.esquerdo h1{
+  margin-bottom: 1.175rem;
+  line-height: 47px;
+  font-size: 36px;
+  text-align: left;
+  max-width: 349px;
+}
+
+.esquerdo p{
+  color: var(--text);
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 19px;
+  max-width: 389px;
+  margin-bottom: 2.8125rem;
+}
+
+.esquerdo button{
+  width: 155px;
+  height: 50px;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+}
+
+.esquerdo button:hover{
+  background-color: var(--white);
+  color: var(--title);
+  border: 1px solid var(--title);
+}
+
+
+/*MAIN*/
+main{
+  background-color: var(--white300);
+  margin-bottom:150px;
+}
+.cards{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.cor-1{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #ff6363;
+  margin-bottom: 12px;
+
+}
+.card{
+  margin-top: 150px;
+  width: 340px;
+  height: 423px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+
+}
+.conteudo-card{
+  width: 282px;
+  height: 146px;
+  margin: 0 auto;
+  
+
+}
+.conteudo-card h1{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+.conteudo-card p{
+  line-height: 30px;
+  font-size: 18px;
+  max-width: 282px;
+  margin-top: 26px;
+  color: var(--text);
+}
+
+.cor-2{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #63ECFF;
+  margin-bottom: 12px;
+
+}
+
+.cor-3{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #F363FF;
+  margin-bottom: 12px;
+
+}
+.cor-4{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #63FF73;
+  margin-bottom: 12px;
+
+}
+.cor-5{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #FFDD63;
+  margin-bottom: 12px;
+
+}
+.cor-6{
+  max-width: 340px;
+  width: 100%;
+  height: 222px;
+  background-color: #6663FF;
+  margin-bottom: 12px;
+
+}
+/*FOOTER*/
+.footer{
+  background-color: var(--bgSite);
+  height:750px ;
+
+}
+
+.footer .titulo{
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 65px;
+ 
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.formulario input{
+  width: 100%;
+  max-width: 470px;
+  height: 65px;
+  border-radius: 8px;
+  font-size:18px;
+  font-family: 'Lato', sans-serif;  
+  padding: 2rem;
+}
+
+.formulario textarea{
+  width: 100%;
+  max-width: 470px;
+  height: 165px;
+  border-radius: 8px;
+  font-size:18px;
+  font-family: 'Lato', sans-serif;  
+  border: none;
+  padding: 2rem;
+}
+
+.formulario button{
+ color: var(--white);
+ background-color: var(--buttonColor);
+ height: 50px;
+ width: 100%;
+ max-width: 470px;
+ border-radius: 8px;
+ font-weight: bold;
+ font-size: 20px;
+ text-align: center;
+}
+
+.formulario button:hover{
+  background-color: var(--white);
+  color: var(--title);
+  border: 1px solid var(--title);
+}
+
